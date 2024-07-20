@@ -139,8 +139,6 @@ export function renderOrderSummary() {
       link.addEventListener('click', () => {
         const productId = link.dataset.productId;
         
-        //console.log(productId);
-
         const container = document.querySelector(`.js-cart-item-container-${productId}`);
 
         container.classList.add('is-editing-quantity');
@@ -152,8 +150,6 @@ export function renderOrderSummary() {
     .forEach((link) => {
       link.addEventListener('click', () => {
         const productId = link.dataset.productId;
-
-        //console.log(productId);
 
         const container = document.querySelector(`.js-cart-item-container-${productId}`);
 
@@ -167,12 +163,9 @@ export function renderOrderSummary() {
           alert('Quantity must be at least 0 and less than 1000');
           return;
         }
-
         updateQuantity(productId, newQuantity);
 
-        const quantityLabel = document.querySelector(`.js-quantity-label-${productId}`);
-
-        quantityLabel.innerHTML = newQuantity;
+        renderOrderSummary();
         renderPaymentSummary();
         renderCheckoutHeader();
       });
