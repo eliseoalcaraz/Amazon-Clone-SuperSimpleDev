@@ -86,7 +86,7 @@ describe('test suite: renderOrderSummary', () => {
       ).toEqual('$20.95');
   });
 
-  it('test suite: delivery option', () => {
+  it('updates delivery option', () => {
     document.querySelector(`.js-delivery-option-${productId1}-3`).click();
 
     expect(
