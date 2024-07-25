@@ -1,3 +1,5 @@
+import { validDelivery } from "./deliveryOptions";
+
 export let cart;
 
 loadFromStorage();
@@ -89,8 +91,10 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
      matchingItem = cartItem;
    }
   });
+
+ const matchingDeliveryOption = validDelivery(deliveryOptionId);
   
-  if(!matchingItem) {
+  if(!matchingItem || !matchingDeliveryOption) {
     return;
   }
 

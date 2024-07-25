@@ -53,3 +53,14 @@ function isWeekend(date) {
   return date.format('dddd') === 'Saturday' ||
     date.format('dddd') === 'Sunday';
 }
+
+export function validDelivery(deliveryOptionId) {
+  
+  deliveryOptions.forEach((option) => {
+    if (option.id === deliveryOptionId) {
+      return true;
+    }
+  });
+
+  return false;
+}
