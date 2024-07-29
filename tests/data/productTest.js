@@ -1,5 +1,5 @@
 import { getProduct } from '../../data/products.js';
-import { localStorage } from '../../data/cart.js';
+import { loadFromStorage }from '../../data/cart.js';
 
 describe('test suite: getProduct', () => {
   beforeEach(() => {
@@ -17,8 +17,6 @@ describe('test suite: getProduct', () => {
   });
 
   it('product match', () => {
-    
     expect(getProduct('e43638ce-6aa0-4b85-b27f-e1d07eb678c6').name).toEqual('Black and Gray Athletic Cotton Socks - 6 Pairs');
-  
   });
 }); 

@@ -56,11 +56,13 @@ function isWeekend(date) {
 
 export function validDelivery(deliveryOptionId) {
   
+  let found = false;
+
   deliveryOptions.forEach((option) => {
     if (option.id === deliveryOptionId) {
-      return true;
+      found = true;
     }
   });
 
-  return false;
+  return found;
 }
