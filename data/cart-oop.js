@@ -1,4 +1,3 @@
-import { loadFromStorage } from "./cart.js";
 import { validDelivery } from "./deliveryOptions.js";
 
 function Cart(localStorageKey) {
