@@ -1,4 +1,5 @@
 import { cart } from '../../data/cart.js'
+import '../../data/car.js';
 
 export function renderCheckoutHeader() {
 
