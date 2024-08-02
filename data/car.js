@@ -93,19 +93,19 @@ const cars = [
 });
 
 
-console.log(cars[0]);
-console.log(cars[1]);
-console.log(cars[2]);
+// console.log(cars[0]);
+// console.log(cars[1]);
+// console.log(cars[2]);
 
-cars[2].go();
-cars[2].go();
-cars[2].go();
-cars[2].displayInfo();
-cars[2].openTrunk();
-cars[2].go();
-cars[2].displayInfo();
-cars[2].brake();
-cars[2].displayInfo();
+// cars[2].go();
+// cars[2].go();
+// cars[2].go();
+// cars[2].displayInfo();
+// cars[2].openTrunk();
+// cars[2].go();
+// cars[2].displayInfo();
+// cars[2].brake();
+// cars[2].displayInfo();
 
 
 
