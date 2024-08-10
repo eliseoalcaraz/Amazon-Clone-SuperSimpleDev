@@ -10,6 +10,11 @@ function saveToStorage() {
   localStorage.setItem('orders', JSON.stringify(orders));
 }
 
+console.log(orders);
+
+
+
+
 
 
 
