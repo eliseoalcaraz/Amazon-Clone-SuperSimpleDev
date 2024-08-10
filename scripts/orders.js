@@ -49,10 +49,9 @@ async function loadPage() {
         
         const deliveryTimeString = dayjs(product.estimatedDeliveryTime).format('MMMM D');
 
-        console.log(product);
-
-
-        console.log(productDetails);
+        //console.log(product);
+        //console.log(productDetails);
+        
         productsListHTML += `
             <div class="product-image-container">
               <img src=${productDetails.image}>
