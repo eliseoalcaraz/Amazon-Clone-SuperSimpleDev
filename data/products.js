@@ -2,14 +2,18 @@ import { formatCurrency } from '../scripts/utils/money.js';
 
 export function getProduct(productId) {
   let matchingProduct;
+  // console.log(products);
 
   products.forEach((product) => {
     if (product.id === productId) {
       matchingProduct = product;
     } 
   });
+  console.log(matchingProduct);
   return matchingProduct;
 }
+
+
 
 export class Product {
   id;
@@ -132,7 +136,6 @@ export function loadProductsFetch() {
 
   return promise;
 }
-
 
 /*
 loadProductsFetch().then(() => {
